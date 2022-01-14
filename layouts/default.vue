@@ -30,32 +30,13 @@
       app
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-btn
-        icon
-        @click.stop="miniVariant = !miniVariant"
-      >
-        <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        @click.stop="clipped = !clipped"
-      >
-        <v-icon>mdi-application</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        @click.stop="fixed = !fixed"
-      >
-        <v-icon>mdi-minus</v-icon>
-      </v-btn>
-      <v-toolbar-title v-text="title" />
+      
+      <v-toolbar-title v-text="home" />
       <v-spacer />
-      <v-btn
-        icon
-        @click.stop="rightDrawer = !rightDrawer"
-      >
-        <v-icon>mdi-menu</v-icon>
-      </v-btn>
+       <v-toolbar-title>About</v-toolbar-title>
+       <v-spacer />
+        <v-toolbar-title>Explore</v-toolbar-title>
+    
     </v-app-bar>
     <v-main>
       <v-container>
@@ -82,8 +63,14 @@
     <v-footer
       :absolute="!fixed"
       app
+      
     >
+    
       <span>&copy; {{ new Date().getFullYear() }}</span>
+      <p>
+        twitter
+        Github
+        </p>
     </v-footer>
   </v-app>
 </template>
@@ -103,14 +90,20 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
+          title: 'Explore',
           to: '/inspire'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'About us',
+          to: '/about'
         }
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'Vuetify.js',
+      home:'Home'
     }
   }
 }
