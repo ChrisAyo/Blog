@@ -91,7 +91,7 @@ export default {
         {
           icon: 'mdi-chart-bubble',
           title: 'Explore',
-          to: '/inspire'
+          to: '/my-first-blog-post'
         },
         {
           icon: 'mdi-chart-bubble',
