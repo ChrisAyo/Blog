@@ -3,7 +3,13 @@ title: How to set a schedule and how to stick to it?
 description: This will speak to your heart and soul cool stuff
 img: favicon.ico
 alt: my second blog post
+
 ---
+Again we go again
+1. Potatoes
+2. Jack and jill
+
+
 <div>
 <p>
 I am a person who likes to do things spontaneously and say yes to things last minute. The problem with this is that my other objectives and Goals will suffer as I leave them to motivation, when I feel like it and when I have time. 

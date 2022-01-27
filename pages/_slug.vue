@@ -57,6 +57,7 @@
 </script>
 
 <style>
+
   .nuxt-content h2 {
     font-weight: bold;
     font-size: 28px;
@@ -68,7 +69,10 @@
   .nuxt-content p {
     margin-bottom: 20px;
   }
-
+  img {
+    width: 120px;
+    height: 120px;
+  }
 
 /*
     doesnt load 

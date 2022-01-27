@@ -4,15 +4,16 @@ description: Tips for future self
 img: v.png
 alt: my first blog post
 ---
-<info-box>
+<!-- <img src="v.png" width="100" height="100"> -->
+ <info-box>
   <template #info-box>
     This is a vue component inside markdown using slots
     sure wait this actually does work
   </template>
 </info-box>
 
-<div class=" p-4 mb-4 text-green bg-blue-500">
-  
+<div class="p-4 mb-4 text-green bg-blue-500">
+ 
   <p>Your current job, doesn’t fill you with the excitement it once did. You have become complacent, and it feels as though you are just going through the motions of doing the work. Lack of creativity and desire means it leaves you feeling empty, there is no end Goal or purpose insight. </p>
 
   <p>
@@ -37,8 +38,6 @@ alt: my first blog post
 <li> A little progress is better than none.</l>
 <li>Have an allocated time slot/ plan for when you’ll code.</li>
 
-  
-  
 </div>
 
 

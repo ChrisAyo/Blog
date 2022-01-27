@@ -89,16 +89,28 @@
 </template>
 <script>
 export default {
-  data(){
+  //  async asyncData({ $content, params }) {
+  //     const articles = await $content('articles')
+  //       .only(['title', 'description', 'img', 'slug', 'author'])
+  //       .sortBy('createdAt', 'asc')
+  //       .fetch()
+
+  //     return {
+  //       articles
+  //     }
+  //   },
+ data(){
+
     return {
       posts: [
-        {Title:'Cheese', Author:'Bishops gate', Date:Date.now()},
+        {Title:['article.title'], Author:'Bishops gate', Date:Date.now()},
         {Title:'Corn', Author:'Star gate', Date:Date.now()},
         {Title:'Tatoes', Author:'Northern gate', Date:Date.now()},
         {Title:'Bread', Author:'Party gate', Date:Date.now()}
       ]
     }
-  }
+  },
+  
 }
 </script>
 
