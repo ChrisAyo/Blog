@@ -4,12 +4,14 @@
     
       <v-container>
         <v-card-title class="headline">
+         
           Welcome to Ola's Blog
+         
         </v-card-title>
 
         
           
-          <img src="~/assets/jump.jpg"/>
+          <img class="mainPic" src="~/assets/jump.jpg"/>
           
   <v-card class="logo py-4 d-flex justify-center">
        <v-card-text>
@@ -67,7 +69,22 @@
       </v-btn>
     </v-card-actions>
   </v-card>
-      
+
+  
+      <h1>Blog Posts</h1>
+    
+      <v-card class="display-flex" v-for="article in articles" :key="article.slug">
+        <NuxtLink :to="{ name: 'slug', params: { slug: article.slug } }">
+          
+            <h2>{{ article.title }}</h2>
+          
+            <img :src="article.img" />
+             <p>{{ article.description }}</p>
+            <p>{{ article.dog }}</p>
+          
+        </NuxtLink>
+      </v-card>
+    
   <v-container class="my-5">
      <v-layout row wrap>
       <v-flex xs12 sm6 md4 lg3 v-for="blog in posts" :key= "blog.Title">
@@ -89,16 +106,17 @@
 </template>
 <script>
 export default {
-  //  async asyncData({ $content, params }) {
-  //     const articles = await $content('articles')
-  //       .only(['title', 'description', 'img', 'slug', 'author'])
-  //       .sortBy('createdAt', 'asc')
-  //       .fetch()
+  async asyncData({ $content}) {
+   
+      const articles = await $content('articles')
+        .only(['title','img','description','slug'])
+        .sortBy('createdAt', 'asc')
+        .fetch()
 
-  //     return {
-  //       articles
-  //     }
-  //   },
+      return {
+        articles
+      }
+    },
  data(){
 
     return {
@@ -115,7 +133,7 @@ export default {
 </script>
 
 <style scoped>
-img {
+.mainPic {
    width:100%; 
    height:100%;
 }

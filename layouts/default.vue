@@ -30,13 +30,15 @@
       app
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      
-      <v-toolbar-title v-text="home" />
+      <NuxtLink to="/">
+      <v-toolbar-title>Home</v-toolbar-title>
+      </NuxtLink>
       <v-spacer />
        <v-toolbar-title>About</v-toolbar-title>
        <v-spacer />
+       <NuxtLink to="/my-first-blog-post">
         <v-toolbar-title>Explore</v-toolbar-title>
-    
+       </NuxtLink>
     </v-app-bar>
     <v-main>
       <v-container>
@@ -63,7 +65,6 @@
     <v-footer
       :absolute="!fixed"
       app
-      
     >
     
       <span>&copy; {{ new Date().getFullYear() }}</span>
@@ -90,7 +91,7 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Explore',
+          title: 'Blog',
           to: '/my-first-blog-post'
         },
         {

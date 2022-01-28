@@ -1,10 +1,9 @@
-
 <template>
 
   <article>
     <!-- <pre>{{article.body}}</pre> -->
     <h1>{{ article.title }}</h1>
-    <p>{{ article.description }}</p>
+    <p>{{ article.dog }}</p>
     <img :src="article.img" :alt="article.alt" />
     
 
@@ -13,13 +12,6 @@
     <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
     <prev-next :prev="prev" :next="next" />
     
-    <!-- <nav>
-      <ul>
-        <li  v-for="link of article.toc" :key="link.id">
-          <NuxtLink :class="{ 'py-2': link.depth === 2, 'ml-2 pb-2': link.depth === 3 }" :to="`#${link.id}`">{{ link.text }}</NuxtLink>
-        </li>
-      </ul>
-    </nav> -->
   </article>
 
 </template>
@@ -43,7 +35,6 @@
     },
 
     methods: {
-      // how to change to english formatting 
         formatDate(date){
           const options = { day:'numeric', month: 'long', year:'numeric' }
           return new Date(date).toLocaleDateString('en-GB', options)
@@ -51,8 +42,6 @@
     }
 
   }
-
-  
 
 </script>
 

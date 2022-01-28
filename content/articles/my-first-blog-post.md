@@ -1,8 +1,9 @@
 ---
 title: So you want to switch careers
-description: Tips for future self
+description: Your current job, doesn’t fill you with the excitement it once did. You have become complacent, and it feels as though you are just going through the motions of doing the work. Lack of creativity and desire means it leaves you feeling empty, there is no end Goal or purpose insight.
 img: v.png
 alt: my first blog post
+dog: hello fish
 ---
 <!-- <img src="v.png" width="100" height="100"> -->
  <info-box>
