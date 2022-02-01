@@ -73,7 +73,7 @@
   
       <h1>Blog Posts</h1>
     
-      <v-card class="display-flex" v-for="article in articles" :key="article.slug">
+      <v-card class="display-flex" v-for="article in firstList" :key="article.slug">
         <NuxtLink :to="{ name: 'slug', params: { slug: article.slug } }">
           
             <h2>{{ article.title }}</h2>
@@ -112,10 +112,15 @@ export default {
         .only(['title','img','description','slug'])
         .sortBy('createdAt', 'asc')
         .fetch()
+      
+      let firstList = articles.slice(0,3)
 
+      console.log(firstList)
+    
       return {
-        articles
+        firstList
       }
+
     },
  data(){
 
