@@ -46,22 +46,33 @@
 </script>
 
 <style>
-
-  .nuxt-content h2 {
+  .font-display {
+    font-family: 'Kalam';
+    font-size: 2em
+  }
+  .nuxt-content h1 {
     font-weight: bold;
     font-size: 28px;
+    font-family: 'Ubuntu',
   }
   .nuxt-content h3 {
     font-weight: bold;
     font-size: 22px;
+    font-family: 'Ubuntu', 
   }
   .nuxt-content p {
     margin-bottom: 20px;
+    font-family: 'Ubuntu', 
+  }
+  h1 {
+  font-family: 'Kalam', sans-serif;
+  font-size: 2em;
   }
   img {
     width: 120px;
     height: 120px;
   }
+
 
 /*
     doesnt load 

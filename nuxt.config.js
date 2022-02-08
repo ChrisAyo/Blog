@@ -21,12 +21,15 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Ubuntu'},    
+      // {href:"https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap", rel:'stylesheet'}
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/main.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -40,8 +43,22 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    '@nuxtjs/google-fonts'
   ],
+  
+  googleFonts: {
+    families:{
+      Inter: [300,500,700],
+      Kalam: {
+        wght:[300,400,700],
+        ital:[100]
+      },
+      Lato: [400,700],
+      Comforter :[400]
 
+    
+    }
+},
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['@nuxt/content'
   ],

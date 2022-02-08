@@ -4,9 +4,9 @@
     
       <v-container>
         <v-card-title class="headline">
-         
+         <h1>
           Welcome to Ola's Blog
-         
+         </h1>
         </v-card-title>
 
         
@@ -73,7 +73,7 @@
   
       <h1>Blog Posts</h1>
     
-      <v-card class="display-flex" v-for="article in firstList" :key="article.slug">
+      <v-card class="display-flex" v-for="article in firstList" :key="article.slug" >
         <NuxtLink :to="{ name: 'slug', params: { slug: article.slug } }">
           
             <h2>{{ article.title }}</h2>
@@ -106,6 +106,7 @@
 </template>
 <script>
 export default {
+  
   async asyncData({ $content}) {
    
       const articles = await $content('articles')
@@ -113,9 +114,10 @@ export default {
         .sortBy('createdAt', 'asc')
         .fetch()
       
+      
       let firstList = articles.slice(0,3)
 
-      console.log(firstList)
+        console.log(firstList[0].slug)
     
       return {
         firstList
@@ -142,4 +144,11 @@ export default {
    width:100%; 
    height:100%;
 }
+
+h1 {
+  font-family: 'Comforter', sans-serif;
+  font-size: 2em;
+}
+
+
 </style>
