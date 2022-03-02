@@ -114,10 +114,10 @@ export default {
         .sortBy('createdAt', 'asc')
         .fetch()
       
-      
-      let firstList = articles.slice(0,3)
+        
+        let firstList = articles.slice(0,3)
 
-        console.log(firstList[0].slug)
+        console.log(articles[0])
     
       return {
         firstList
@@ -140,15 +140,23 @@ export default {
 </script>
 
 <style scoped>
+
+.container {
+  background-color:rgb(228, 235, 234)
+}
+
 .mainPic {
    width:100%; 
    height:100%;
 }
 
 h1 {
-  font-family: 'Comforter', sans-serif;
+  font-family: 'Kalam', sans-serif;
   font-size: 2em;
 }
 
-
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+}
 </style>

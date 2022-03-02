@@ -10,7 +10,7 @@ dog: Something finee
 2. Jack and jill
 
 
-<div>
+<div class="font-display">
 <p>
 I am a person who likes to do things spontaneously and say yes to things last minute. The problem with this is that my other objectives and Goals will suffer as I leave them to motivation, when I feel like it and when I have time. 
 

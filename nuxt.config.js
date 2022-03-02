@@ -22,7 +22,8 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Ubuntu'},    
+      { rel:"stylesheet", href:"https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Comforter&family=Inter&family=Lato&family=Supermercado+One&display=swap"},
+      // {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Ubuntu'},    
       // {href:"https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap", rel:'stylesheet'}
     ]
   },
@@ -54,9 +55,11 @@ export default {
         ital:[100]
       },
       Lato: [400,700],
-      Comforter :[400]
+      Comforter: [400],
+      'Supermercado One': [300]
 
-    
+
+
     }
 },
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -67,7 +70,7 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
+      dark: false,
       themes: {
         dark: {
           primary: colors.blue.darken2,

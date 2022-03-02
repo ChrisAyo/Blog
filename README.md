@@ -1,4 +1,8 @@
-# Blog
+
+# Personal Blog
+
+I want to use the Blog as a platform to show my inner creativity and tap into my inner genius, the part of me where time just goes and I have so much fun. I want to share my Writings and thoughts, Goals/Bucket list, Travel journeys experiences and tips. 
+
 
 ## Build Setup
 
@@ -17,7 +21,21 @@ $ npm run start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+## Deployment
+
+To deploy this project run
+
+```bash
+  npm run dev
+```
+## Tech Stack
+
+**Client:** Vue3, JS, Vuetify, HTML, CSS
+
+**Server:** Node, 
+
+
+## Usage/Examples
 
 ## Special Directories
 
@@ -66,4 +84,6 @@ More information about the usage of this directory in [the documentation](https:
 
 This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+## 🚀 About Me
+I'm a Junior developer, exploring.
+
