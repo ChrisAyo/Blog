@@ -28,22 +28,30 @@ To deploy this project run
 ```bash
   npm run dev
 ```
+## How to add a blog post
+In order to add a blog post to the site, you will need to create a md. file in content, under the subfolder of articles. 
+
+These are where all the posts are stored.
+
+##
+
+## Specific information
+- About.Vue : This is a synopsis of me and a bit about the site/projects I am working on, also further links to my social media sites.
+
+- Slug.vue : This is the template, for how my posts are styled and how it comes up. Being able to change fonts.
+
+- Index.vue : Displays the landing page, and all changes to the landing page are made here.
 ## Tech Stack
 
-**Client:** Vue3, JS, Vuetify, HTML, CSS
-
-**Server:** Node, 
-
+ Vue3, JS, Vuetify, HTML, CSS
 
 ## Usage/Examples
-
-## Special Directories
 
 You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
 
 ### `assets`
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts. 
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
 
@@ -66,23 +74,7 @@ This directory contains your application views and routes. Nuxt will read all th
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
 
-### `plugins`
 
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
 ## 🚀 About Me
 I'm a Junior developer, exploring.

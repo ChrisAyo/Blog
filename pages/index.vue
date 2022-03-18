@@ -1,35 +1,32 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-    
-      <v-container>
-        <v-card-title class="headline">
-         <h1>
+  <v-row display="flex">
+    <div id="header">
+      <h1 id="headerContent">
           Welcome to Ola's Blog
          </h1>
-        </v-card-title>
-
-        
-          
-          <img class="mainPic" src="~/assets/jump.jpg"/>
-          
-  <v-card class="logo py-4 d-flex justify-center">
-       <v-card-text>
+    </div>
+    <v-col cols="12" sm="8" md="6">
+        <!-- <v-card-title class="headline"> -->
          
-        <p>Blog Vs Portfolio 
+        <!-- </v-card-title> -->        
+      <div class="landing">
+        <img class="mainPic" src="~/assets/jump.jpg"/>
+          </div>
+         <div class="main-text">
+           <v-card-text>
+            <p>Blog Vs Portfolio 
 
-        Why blog 
+            Why blog 
 
-        I want to use the platform to show my inner creativity and tap into my inner genius, the part of me where time just goes and I have so much fun. I want to share my Writings and thoughts, Goals/Bucket list, Travel journeys experiences and tips. And some outfits that I think are cool and fun. 
+            I want to use the platform to show my inner creativity and tap into my inner genius, the part of me where time just goes and I have so much fun. I want to share my Writings and thoughts, Goals/Bucket list, Travel journeys experiences and tips. And some outfits that I think are cool and fun. 
 
-        “A blog to express my creativity, discover grow and play” 
+            “A blog to express my creativity, discover grow and play” 
 
-        There is a lot above and with time I may narrow it down however at the moment this is what I want to achieve and accomplish, I will be building the blog using Vue, Nuxt.js and hosting it using github.
-        </p>
-       </v-card-text>
-       
-      </v-card>
-     </v-container>
+            There is a lot above and with time I may narrow it down however at the moment this is what I want to achieve and accomplish, I will be building the blog using Vue, Nuxt.js and hosting it using github.
+            </p>
+          </v-card-text>
+        </div>
+    
      
 <v-card
     class="mx-auto"
@@ -141,22 +138,43 @@ export default {
 
 <style scoped>
 
+#header{
+width: 100;
+}
+#headerContent{
+margin:0 auto; width: 1000px;
+}
 .container {
   background-color:rgb(228, 235, 234)
 }
-
+.landing {
+  
+  display:inline-flex;
+  justify-content: flex-start;
+  
+}
 .mainPic {
    width:100%; 
    height:100%;
+   
 }
 
 h1 {
   font-family: 'Kalam', sans-serif;
   font-size: 2em;
+  display:flex;
+  justify-content:center;
 }
 
 p {
   font-family: 'Lato', sans-serif;
   font-size: 1em;
+  width:100%;
+}
+
+.main-text {
+  width:700px;
+justify-content: space-around;
+
 }
 </style>

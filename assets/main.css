@@ -1,7 +1,39 @@
-@font-face {
-    font-family: 'Salam';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap') format('truetype');
+
+
+  *{
+    box-sizing: border-box;
   }
+  body {
+    margin:0;
+    padding: 0;
+  }
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+  .brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+  }
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  
+
+}
+.navbar-links ul {
+list-style: none;
+}
+.navbar-links a {
+  text-decoration: none;
+  padding: 1rem;
+  color: black;
+  display: block;
+}
+.navbar-links a:hover{
+  background-color: grey;
+}

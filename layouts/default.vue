@@ -24,22 +24,29 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar
+    <!-- <v-app-bar
       :clipped-left="clipped"
       fixed
       app
-    >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <NuxtLink to="/">
-      <v-toolbar-title>Home</v-toolbar-title>
-      </NuxtLink>
-      <v-spacer />
-       <v-toolbar-title>About</v-toolbar-title>
-       <v-spacer />
-       <NuxtLink to="/my-first-blog-post">
-        <v-toolbar-title>Explore</v-toolbar-title>
-       </NuxtLink>
-    </v-app-bar>
+    > -->
+    <nav class="navbar">
+      <div class="brand-title"> Chris Creates </div>
+      <div class="navbar-links">
+        <ul>
+          <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+          <NuxtLink to="/">
+          <v-toolbar-title>Home</v-toolbar-title>
+          </NuxtLink>
+          <NuxtLink to="/">
+          <v-toolbar-title>About</v-toolbar-title>
+          </NuxtLink>
+          <NuxtLink to="/my-first-blog-post">
+          <v-toolbar-title>Explore</v-toolbar-title>
+          </NuxtLink>
+        </ul>
+      </div>
+    </nav>
+    <!-- </v-app-bar> -->
     <v-main>
       <v-container>
         <Nuxt />
@@ -109,3 +116,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.v-toolbar__content {
+background-color: rgb(255, 255, 254);
+}
+</style>
