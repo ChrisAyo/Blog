@@ -1,33 +1,37 @@
 <template>
-  <v-row display="flex">
+<div display="flex">
+  <!-- <v-row display="flex"> -->
     <div id="header">
       <h1 id="headerContent">
           Welcome to Ola's Blog
          </h1>
     </div>
-    <v-col cols="12" sm="8" md="6">
+    <!-- <v-col cols="12" sm="8" md="6"> -->
         <!-- <v-card-title class="headline"> -->
          
         <!-- </v-card-title> -->        
-      <div class="landing">
-        <img class="mainPic" src="~/assets/jump.jpg"/>
+        <div class="landing">
+          <div class="mainPic">
+            <img  src="~/assets/jump.jpg"/>
           </div>
-         <div class="main-text">
-           <v-card-text>
-            <p>Blog Vs Portfolio 
+        
+             <div class="main-text">
+           
+             <p>Blog Vs Portfolio 
 
-            Why blog 
+              Why blog 
 
-            I want to use the platform to show my inner creativity and tap into my inner genius, the part of me where time just goes and I have so much fun. I want to share my Writings and thoughts, Goals/Bucket list, Travel journeys experiences and tips. And some outfits that I think are cool and fun. 
+              I want to use the platform to show my inner creativity and tap into my inner genius, the part of me where time just goes and I have so much fun. I want to share my Writings and thoughts, Goals/Bucket list, Travel journeys experiences and tips. And some outfits that I think are cool and fun. 
 
-            “A blog to express my creativity, discover grow and play” 
+              “A blog to express my creativity, discover grow and play” 
 
-            There is a lot above and with time I may narrow it down however at the moment this is what I want to achieve and accomplish, I will be building the blog using Vue, Nuxt.js and hosting it using github.
+              There is a lot above and with time I may narrow it down however at the moment this is what I want to achieve and accomplish, I will be building the blog using Vue, Nuxt.js and hosting it using github.
             </p>
-          </v-card-text>
-        </div>
+          
+            </div>
     
-     
+       </div>
+       
 <v-card
     class="mx-auto"
     max-width="400"
@@ -90,15 +94,16 @@
             Image is here
           </v-responsive>
       <v-card-text>
-        <div class="Subheading">{{blog.Title}}</div>
-        <div class="grey--text">{{blog.Author}}</div>
+          <div class="Subheading">{{blog.Title}}</div>
+          <div class="grey--text">{{blog.Author}}</div>
       </v-card-text>
-      </v-card>
-    </v-flex>
-  </v-layout>
-  </v-container>
-    </v-col>
-  </v-row>
+          </v-card>
+         </v-flex>
+       </v-layout>
+      </v-container>
+   
+    </div>
+  <!-- </v-row> -->
   
 </template>
 <script>
@@ -148,17 +153,19 @@ margin:0 auto; width: 1000px;
   background-color:rgb(228, 235, 234)
 }
 .landing {
-  
-  display:inline-flex;
-  justify-content: flex-start;
-  
+  display:flex;
 }
 .mainPic {
-   width:100%; 
-   height:100%;
-   
+   width:700px;
+   height:400px;
 }
-
+img {
+  width: 100%;
+  height:100%;
+}
+.main-text {
+  flex-grow:3;
+}
 h1 {
   font-family: 'Kalam', sans-serif;
   font-size: 2em;
@@ -172,9 +179,5 @@ p {
   width:100%;
 }
 
-.main-text {
-  width:700px;
-justify-content: space-around;
 
-}
 </style>
