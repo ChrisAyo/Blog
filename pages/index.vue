@@ -90,7 +90,20 @@ export default {
       firstList,
     };
   },
-  data() {},
+  methods() {
+    const hamburger = this.$el.querySelector(".hamburger");
+    const navMenu = this.$el.querySelector(".navbar-section");
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    });
+    this.$el.querySelectorAll(".navbar-links").forEach((n) =>
+      n.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      })
+    );
+  },
 };
 </script>
 
@@ -154,8 +167,8 @@ export default {
     min-width: 100px;
     min-height: 100px;
   }
-  .imageJump {
-  }
+  /* .imageJump {
+  } */
 }
 .mainPic {
   min-height: 400px;
@@ -168,11 +181,11 @@ export default {
   height: 100%;
 }
 
-.main-text {
-  /* flex-grow: 0; */
-  /* justify-content: center;
+/* .main-text { */
+/* flex-grow: 0; */
+/* justify-content: center;
   align-content: center; */
-}
+/* } */
 .flex-item {
   margin: 5px;
 }

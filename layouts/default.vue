@@ -44,6 +44,11 @@
             <v-toolbar-title>Explore</v-toolbar-title>
           </NuxtLink>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </div>
     </nav>
     <!-- </v-app-bar> -->

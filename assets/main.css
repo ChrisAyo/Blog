@@ -7,6 +7,8 @@
     padding: 0;
   }
   .navbar {
+  width: 100%;
+  min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +19,6 @@
   
   }
 
-
   .brand-title {
     font-size: 1.5rem;
     margin: .5rem;
@@ -27,6 +28,8 @@
   margin: 0;
   padding: 0;
   display: flex;
+  /* justify-content: space-between;
+  align-items: center; */
 }
 .navbar-links ul {
 list-style: none;
@@ -40,3 +43,55 @@ list-style: none;
 .navbar-links a:hover{
   background-color: grey;
 }
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+.bar{
+  display: block;
+  width:25px;
+  height: 3px;
+  margin: 5px 0;
+  transition:  all 0.3s ease;
+  background-color: black;
+}
+
+@media(max-width:1000px){
+  .navbar {
+    width: 100%;
+  }
+}
+
+@media(max-width:800px){
+  .hamburger{
+    display:block ;
+    margin: 15px;
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform:translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform:translateY(-8px) rotate(-45deg);
+  }
+
+  .navbar-section{
+    position: fixed;
+    left: - 100%;
+    top:70px;
+    flex-direction: column;
+    /* Could i also have used display:none? */
+    /* flex-direction: column; */
+    background-color: #3a24f0;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .navbar-section.active{
+    left:0;
+  }
+}
+  
