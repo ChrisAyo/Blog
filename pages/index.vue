@@ -2,7 +2,7 @@
   <div display="flex">
     <!-- <v-row display="flex"> -->
     <div id="header">
-      <h1 id="headerContent">Welcome to Ola's Blog</h1>
+      <h1 id="headerContent">Ola's Blog</h1>
     </div>
     <!-- <v-col cols="12" sm="8" md="6"> -->
     <!-- <v-card-title class="headline"> -->
