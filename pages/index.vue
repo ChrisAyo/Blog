@@ -90,20 +90,20 @@ export default {
       firstList,
     };
   },
-  methods() {
-    const hamburger = this.$el.querySelector(".hamburger");
-    const navMenu = this.$el.querySelector(".navbar-section");
-    hamburger.addEventListener("click", () => {
-      hamburger.classList.toggle("active");
-      navMenu.classList.toggle("active");
-    });
-    this.$el.querySelectorAll(".navbar-links").forEach((n) =>
-      n.addEventListener("click", () => {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-      })
-    );
-  },
+  // methods() {
+  //   const hamburger = this.$el.querySelector(".hamburger");
+  //   const navMenu = this.$el.querySelector(".navbar-section");
+  //   hamburger.addEventListener("click", () => {
+  //     hamburger.classList.toggle("active");
+  //     navMenu.classList.toggle("active");
+  //   });
+  //   this.$el.querySelectorAll(".navbar-links").forEach((n) =>
+  //     n.addEventListener("click", () => {
+  //       hamburger.classList.remove("active");
+  //       navMenu.classList.remove("active");
+  //     })
+  //   );
+  // },
 };
 </script>
 

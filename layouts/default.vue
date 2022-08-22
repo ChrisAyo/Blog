@@ -44,7 +44,7 @@
             <v-toolbar-title>Explore</v-toolbar-title>
           </NuxtLink>
         </ul>
-        <div class="hamburger">
+        <div class="hamburger" @click="burgerOnClick()">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
@@ -104,6 +104,24 @@ export default {
       title: "Vuetify.js",
       home: "Home",
     };
+  },
+
+  methods: {
+    burgerOnClick() {
+      const hamburger = this.$el.querySelector(".hamburger");
+      const navMenu = this.$el.querySelector(".navbar-section");
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+      //  hamburger.addEventListener("click", () => {
+
+      //   });
+      // this.$el.querySelectorAll(".navbar-links").forEach((n) =>
+      //   n.addEventListener("click", () => {
+      //     hamburger.classList.remove("active");
+      //     navMenu.classList.remove("active");
+      //   })
+      // );
+    },
   },
 };
 </script>
