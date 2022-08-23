@@ -79,7 +79,7 @@ list-style: none;
 
   .navbar-section{
     position: fixed;
-    left: -250px;
+    left: -800px;
     top:70px;
     flex-direction: column;
     /* Could i also have used display:none? */
