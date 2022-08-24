@@ -32,7 +32,7 @@
     <nav class="navbar">
       <div class="brand-title">Chris Creates</div>
       <div class="navbar-links">
-        <ul class="navbar-section">
+        <ul class="navbar-section" @click="closeNavMenu()">
           <!-- <v-app-bar-nav-icon @click.stop="drawer = !drawer" /> -->
           <NuxtLink to="/">
             <v-toolbar-title>Home</v-toolbar-title>
@@ -121,6 +121,12 @@ export default {
       //     navMenu.classList.remove("active");
       //   })
       // );
+    },
+    closeNavMenu() {
+      const hamburger = this.$el.querySelector(".hamburger");
+      const navMenu = this.$el.querySelector(".navbar-section");
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
     },
   },
 };
