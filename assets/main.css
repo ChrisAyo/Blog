@@ -41,7 +41,7 @@ list-style: none;
   display: block;
 }
 .navbar-links a:hover{
-  background-color: grey;
+  background-color: rgb(92, 210, 196);
 }
 .hamburger{
   display: none;
@@ -92,6 +92,9 @@ list-style: none;
 
   .navbar-section.active{
     left:0px;
+    /* padding-right: 0px; */
+    padding-left: 0px;
+    /* right:50px; */
   }
 }
   
