@@ -10,7 +10,7 @@
     <!-- </v-card-title> -->
     <div class="landing">
       <div class="mainPic">
-        <img class="imageJump" src="~/assets/jump.jpg" />
+        <img class="imageJump" src="~/static/heat.jpg" />
       </div>
       <div class="main-text flex-item">
         <p>
@@ -35,18 +35,23 @@
         v-for="article in firstList"
         :key="article.slug"
       >
-        <v-img class="black--text align-end article-image" src="article.img">
-        </v-img>
-        <v-card-title>{{ article.title }}</v-card-title>
-        <v-card-text class="text--primary">
-          {{ article.description }}
-        </v-card-text>
-
+        <NuxtLink
+          class="cardLink"
+          :to="{ name: 'slug', params: { slug: article.slug } }"
+        >
+          <v-img class="black--text align-end article-image" :src="article.img">
+          </v-img>
+          <v-card-title
+            ><strong>{{ article.title }}</strong></v-card-title
+          >
+          <v-card-text class="text--primary">
+            {{ article.description }}
+          </v-card-text>
+        </NuxtLink>
         <v-card-actions>
-          <v-btn color="green" text> Share </v-btn>
-          <NuxtLink :to="{ name: 'slug', params: { slug: article.slug } }">
-            <v-btn color="grange" text> Explore </v-btn>
-          </NuxtLink>
+          <v-card-text class="text--primary">
+            {{ article.date }}
+          </v-card-text>
         </v-card-actions>
 
         <!-- <h2>{{ article.title }}</h2>
@@ -78,7 +83,7 @@
 export default {
   async asyncData({ $content }) {
     const articles = await $content("articles")
-      .only(["title", "img", "description", "slug"])
+      .only(["title", "img", "description", "slug", "date"])
       .sortBy("createdAt", "asc")
       .fetch();
 
@@ -108,6 +113,9 @@ export default {
 </script>
 
 <style scoped>
+.cardLink {
+  text-decoration: none;
+}
 .article-block {
   display: flex;
 }
@@ -125,6 +133,9 @@ export default {
 }
 .article-image {
   height: 200px;
+}
+.date {
+  color: blue;
 }
 
 @media (max-width: 800px) {
@@ -167,8 +178,6 @@ export default {
     min-width: 100px;
     min-height: 100px;
   }
-  /* .imageJump {
-  } */
 }
 .mainPic {
   min-height: 400px;

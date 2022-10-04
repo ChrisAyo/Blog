@@ -1,16 +1,18 @@
 <template>
   <article>
-    <!-- <pre>{{article.body}}</pre> -->
-    <div class="nuxt-content">
-      <h1>{{ article.title }}</h1>
+    <div class="myArticle">
+      <div class="nuxt-content">
+        <h1>{{ article.title }}</h1>
+      </div>
+      <p>{{ article.dog }}</p>
+      <img class="blogPics" :src="article.img" :alt="article.alt" />
+
+      <nuxt-content class="nuxt-content" :document="article" />
+
+      <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
+      <p>{{ article.description }}</p>
+      <prev-next :prev="prev" :next="next" />
     </div>
-    <p>{{ article.dog }}</p>
-    <img :src="article.img" :alt="article.alt" />
-
-    <nuxt-content class="nuxt-content" :document="article" />
-
-    <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
-    <prev-next :prev="prev" :next="next" />
   </article>
 </template>
 
@@ -42,6 +44,18 @@ export default {
 </script>
 
 <style>
+.blogPics {
+  max-width: 100px;
+}
+.myArticle {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+article {
+  display: flex;
+  justify-content: center;
+}
 h1 {
   font-family: "Lato", sans-serif;
   font-size: 5em;
@@ -63,7 +77,7 @@ h1 {
 .nuxt-content p {
   margin-bottom: 20px;
   font-family: "Kalam";
-  font-size: 3em;
+  font-size: 20px;
 }
 
 /* img {
