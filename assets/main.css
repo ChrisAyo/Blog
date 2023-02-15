@@ -1,7 +1,15 @@
-
-  /* *{
-    box-sizing: border-box;
+  .no-text-decoration {
+    text-decoration: none;
+  }
+  /* .hover-effect a:hover {
+    background-color:red
   } */
+  .backgroundColour{
+    background: #5c6bc0 !important;
+  }
+  .v-application .indigo {
+      background-color: red;
+  } 
   body {
     margin:0;
     padding: 0;
@@ -14,34 +22,46 @@
   align-items: center;
   position: sticky;
   top: 0px;
-  background: #3a24f0;
   z-index: 1;
-  
   }
 
   .brand-title {
-    font-size: 1.5rem;
+    font-size: 3rem;
     margin: .5rem;
+    color: white;
+    text-decoration: none;
   }
-
+.brand-title div:hover {
+background-color: green;
+}
 .navbar-links ul {
   margin: 0;
   padding: 0;
   display: flex;
   /* justify-content: space-between;
   align-items: center; */
+  list-style: none;
+  
 }
-.navbar-links ul {
-list-style: none;
-}
-.navbar-links a {
+
+.footer-links a {
+  font-weight: bold;
   text-decoration: none;
   padding: 1rem;
-  color: black;
+  color: rgb(250, 250, 250);
+  display: inline-block;
+  /* justify-content: center;
+  flex-direction: column; */
+}
+.navbar-links a {
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem;
+  color: rgb(250, 250, 250);
   display: block;
 }
 .navbar-links a:hover{
-  background-color: rgb(92, 210, 196);
+  background-color: rgb(109, 183, 240);
 }
 .hamburger{
   display: none;

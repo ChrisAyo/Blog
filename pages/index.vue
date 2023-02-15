@@ -10,7 +10,7 @@
     <!-- </v-card-title> -->
     <div class="landing">
       <div class="mainPic">
-        <img class="imageJump" src="~/static/heat.jpg" />
+        <img class="imageJump" src="~/static/heatC.png" />
       </div>
       <div class="main-text flex-item">
         <p>

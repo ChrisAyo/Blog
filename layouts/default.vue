@@ -1,43 +1,18 @@
 <template>
   <v-app dark>
-    <!-- <v-navigation-drawer
-      v-model="drawer"
-      :mini-variant="miniVariant"
-      :clipped="clipped"
-      fixed
-      app
-    >
-      <v-list>
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-        >
-          <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title v-text="item.title" />
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer> -->
-    <!-- <v-app-bar
-      :clipped-left="clipped"
-      fixed
-      app
-    > -->
-    <nav class="navbar">
-      <div class="brand-title">Chris Creates</div>
+    <nav class="navbar v-application indigo lighten-1">
+      <div class="hover-effect">
+        <NuxtLink class="no-text-decoration" to="/">
+          <div class="brand-title">Chris Creates</div>
+        </NuxtLink>
+      </div>
       <div class="navbar-links">
         <ul class="navbar-section" @click="closeNavMenu()">
           <!-- <v-app-bar-nav-icon @click.stop="drawer = !drawer" /> -->
           <NuxtLink to="/">
             <v-toolbar-title>Home</v-toolbar-title>
           </NuxtLink>
-          <NuxtLink to="/">
+          <NuxtLink to="/about">
             <v-toolbar-title>About</v-toolbar-title>
           </NuxtLink>
           <NuxtLink to="/my-first-blog-post">
@@ -67,10 +42,42 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-footer :absolute="!fixed" app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-      <p>twitter Github</p>
+    <!-- <v-footer :absolute="!fixed" app> -->
+    <!-- <div class="stretch"> -->
+    <v-footer light padless>
+      <v-card flat tile class="indigo lighten-1 white--text text-center">
+        <v-card-text>
+          <v-btn
+            v-for="icon in icons"
+            :key="icon"
+            class="mx-4 white--text"
+            icon
+          >
+            <v-icon size="24px">
+              {{ icon }}
+            </v-icon>
+          </v-btn>
+        </v-card-text>
+        <div class="footer-links">
+          <v-card-text class="white--text pt-0">
+            <NuxtLink to="/about">
+              <v-toolbar-title>About</v-toolbar-title>
+            </NuxtLink>
+            <NuxtLink to="/my-first-blog-post">
+              <v-toolbar-title>Explore</v-toolbar-title>
+            </NuxtLink>
+          </v-card-text>
+        </div>
+        <v-divider></v-divider>
+
+        <v-card-text class="white--text">
+          {{ new Date().getFullYear() }} — <strong>Chris Creates</strong>
+        </v-card-text>
+      </v-card>
+      <!-- <span>&copy; {{ new Date().getFullYear() }}</span>
+      <p>twitter Github</p> -->
     </v-footer>
+    <!-- </div> -->
   </v-app>
 </template>
 
@@ -81,6 +88,7 @@ export default {
       clipped: false,
       drawer: false,
       fixed: false,
+      icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
       items: [
         {
           icon: "mdi-apps",
@@ -143,12 +151,20 @@ export default {
   overflow: hidden;
 } */
 
-.navbar-links {
-  font-weight: bold;
+.v-footer {
+  flex-direction: column;
+  align-items: normal;
 }
+/* .navbar-links {
+  font-weight: bold;
+} */
 
 .brand-title {
   font-size: 2rem;
   font-weight: bold;
+}
+
+.stretch {
+  display: block;
 }
 </style>

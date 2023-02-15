@@ -5,13 +5,14 @@
         <h1>{{ article.title }}</h1>
       </div>
       <p>{{ article.dog }}</p>
+
       <img class="blogPics" :src="article.img" :alt="article.alt" />
 
       <nuxt-content class="nuxt-content" :document="article" />
 
       <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
-      <p>{{ article.description }}</p>
-      <prev-next :prev="prev" :next="next" />
+      <!-- <p>{{ article.description }}</p> -->
+      <prev-next class="buttonSpace" :prev="prev" :next="next" />
     </div>
   </article>
 </template>
@@ -27,6 +28,7 @@ export default {
       .surround(params.slug)
       .fetch();
 
+    console.log(prev);
     return {
       article,
       prev,
@@ -44,8 +46,32 @@ export default {
 </script>
 
 <style>
+.articleImage {
+  width: 100%;
+}
+
+.buttonSpace {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+}
+.buttonSpace a {
+  border-radius: 25px;
+  text-decoration: none;
+  background-color: #06b6d9;
+  color: white;
+  padding: 15px 25px;
+}
+.buttonSpace a:hover {
+  background-color: #77787d;
+}
+
+.buttonLink {
+  text-decoration: none;
+}
 .blogPics {
   max-width: 100px;
+  padding-bottom: 25px;
 }
 .myArticle {
   display: flex;
@@ -57,26 +83,26 @@ article {
   justify-content: center;
 }
 h1 {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 5em;
 }
 .font-display {
-  font-family: "Lato";
+  font-family: "Open Sans", sans-serif;
   font-size: 1.5em;
 }
 .nuxt-content h1 {
-  font-weight: bold;
-  font-size: 4em;
-  font-family: "Kalam";
+  font-weight: 500em;
+  font-size: 3em;
+  font-family: "Open Sans", sans-serif;
 }
 .nuxt-content h3 {
   font-weight: bold;
   font-size: 22px;
-  font-family: "Ubuntu";
+  font-family: "Open Sans", sans-serif;
 }
 .nuxt-content p {
   margin-bottom: 20px;
-  font-family: "Kalam";
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
 }
 

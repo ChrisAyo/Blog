@@ -1,7 +1,7 @@
 ---
 title: So you want to switch careers
 description: Your current job, doesn’t fill you with the excitement it once did. You have become complacent, and it feels as though you are just going through the motions of doing the work. Lack of creativity and desire means it leaves you feeling empty, there is no end Goal or purpose insight.
-img: v.png
+img: woodland.jpeg
 alt: my first blog post
 date: 26th March 2021
 ---
@@ -24,7 +24,7 @@ So, the course starts and you are on top things, reading and doing the course ma
 
 You finish the course and it’s time to start the next journey, however you’re still fearful. You think about how much less you could potentially earn, you have work to do on your CV, you haven’t applied for Jobs. Fear of failure in the unconscious is crippling you.
 
-    Lessons Learnt:
+Lessons Learnt:
 
 <li>Consistency is key.</li>
 <li>Don’t be afraid to fail.</li>
