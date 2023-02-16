@@ -72,7 +72,7 @@
         <v-divider></v-divider>
 
         <v-card-text class="white--text">
-          {{ new Date().getFullYear() }} — <strong>Chris Creates</strong>
+          {{ new Date().getFullYear() }} — <strong>Chris Ayo Creates</strong>
         </v-card-text>
       </v-card>
       <!-- <span>&copy; {{ new Date().getFullYear() }}</span>
