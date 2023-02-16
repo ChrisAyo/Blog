@@ -46,6 +46,16 @@
     <!-- <div class="stretch"> -->
     <v-footer light padless>
       <v-card flat tile class="indigo lighten-1 white--text text-center">
+        <div class="footer-links">
+          <v-card-text class="white--text pt-0">
+            <NuxtLink to="/about">
+              <v-toolbar-title>About</v-toolbar-title>
+            </NuxtLink>
+            <NuxtLink to="/my-first-blog-post">
+              <v-toolbar-title>Explore</v-toolbar-title>
+            </NuxtLink>
+          </v-card-text>
+        </div>
         <v-card-text>
           <v-btn
             v-for="icon in icons"
@@ -58,16 +68,7 @@
             </v-icon>
           </v-btn>
         </v-card-text>
-        <div class="footer-links">
-          <v-card-text class="white--text pt-0">
-            <NuxtLink to="/about">
-              <v-toolbar-title>About</v-toolbar-title>
-            </NuxtLink>
-            <NuxtLink to="/my-first-blog-post">
-              <v-toolbar-title>Explore</v-toolbar-title>
-            </NuxtLink>
-          </v-card-text>
-        </div>
+
         <v-divider></v-divider>
 
         <v-card-text class="white--text">
