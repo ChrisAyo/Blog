@@ -1,17 +1,18 @@
 <template>
   <div display="flex">
-    <h1>Hi Hello</h1>
+    <h1>Hello</h1>
     <p>
-      Blog Vs Portfolio Why blog I want to use the platform to show my inner
-      creativity and tap into my inner genius, the part of me where time just
-      goes and I have so much fun. I want to share my Writings and thoughts,
-      Goals/Bucket list, Travel journeys experiences and tips. And some outfits
-      that I think are cool and fun. “A blog to express my creativity, discover
-      grow and play” There is a lot above and with time I may narrow it down
-      however at the moment this is what I want to achieve and accomplish, I
-      will be building the blog using Vue, Nuxt.js and hosting it using github.
+      <b
+        >Welcome to my Blog, I am using this platform to showcase my projects,
+        interests share my hobbies and document my growth. At the core of it all
+        I want to have fun and learn, while simultaneously using this platform
+        to push myself outside of my comfort zone. I want to share my writings
+        and thoughts, Goals/Bucket list, Travel journeys experiences and tips.
+        And some outfits that I think are cool and fun. “A blog to express my
+        creativity, discover grow and play”.
+      </b>
     </p>
-    <img class="aboutPic" src="~/static/heat.jpg" />
+    <img class="aboutPic" src="~/static/Norfolk.jpeg" />
   </div>
 </template>
 
@@ -31,10 +32,18 @@ export default {
 </script>
 
 <style>
+.h1 {
+  /* font-size: 3em; */
+}
 .aboutPic {
   max-height: 400px;
   max-width: 400px;
   min-width: 100px;
   min-height: 100px;
+}
+
+p {
+  display: flex;
+  justify-content: center;
 }
 </style>

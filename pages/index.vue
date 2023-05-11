@@ -89,8 +89,6 @@ export default {
 
     let firstList = articles.slice(0, 3);
 
-    console.log(articles[0]);
-
     return {
       firstList,
     };

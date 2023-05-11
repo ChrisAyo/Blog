@@ -47,7 +47,7 @@
     <v-footer light padless>
       <v-card flat tile class="indigo lighten-1 white--text text-center">
         <div class="footer-links">
-          <v-card-text class="white--text pt-0">
+          <v-card-text class="white--text pt-0 space">
             <NuxtLink to="/about">
               <v-toolbar-title>About</v-toolbar-title>
             </NuxtLink>
@@ -56,18 +56,20 @@
             </NuxtLink>
           </v-card-text>
         </div>
-        <v-card-text>
+        <div class="space">
           <v-btn
-            v-for="icon in icons"
-            :key="icon"
+            v-for="footerLink in footerLinks"
+            :key="footerLink"
             class="mx-4 white--text"
+            :href="footerLink.to"
             icon
+            target="_blank"
           >
             <v-icon size="24px">
-              {{ icon }}
+              {{ footerLink.icon }}
             </v-icon>
           </v-btn>
-        </v-card-text>
+        </div>
 
         <v-divider></v-divider>
 
@@ -89,7 +91,15 @@ export default {
       clipped: false,
       drawer: false,
       fixed: false,
-      icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
+      footerLinks: [
+        { icon: "mdi-github", to: "https://github.com/ChrisAyo" },
+        { icon: "mdi-twitter", to: "https://twitter.com" },
+        {
+          icon: "mdi-linkedin",
+          to: "https://www.linkedin.com/in/christopherayodele/",
+        },
+        // { icon: "mdi-instagram", to: "instagram.com" },
+      ],
       items: [
         {
           icon: "mdi-apps",

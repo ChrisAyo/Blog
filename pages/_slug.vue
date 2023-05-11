@@ -83,8 +83,9 @@ article {
   justify-content: center;
 }
 h1 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 5em;
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+  display: flex;
 }
 .font-display {
   font-family: "Open Sans", sans-serif;

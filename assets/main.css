@@ -76,6 +76,19 @@ background-color: green;
   background-color: black;
 }
 
+.v-card__subtitle {
+  padding:0px;
+}
+.v-card__text{
+  padding: 0px;
+}
+.v-card__title{
+  padding:0px;
+}
+.space{
+  padding:0px;
+}
+
 @media(max-width:1000px){
   .navbar {
     width: 100%;
@@ -104,10 +117,11 @@ background-color: green;
     flex-direction: column;
     /* Could i also have used display:none? */
     /* flex-direction: column; */
-    background-color: #3a24f0;
+    /* background-color: #3a24f0; */
     width: 100%;
     text-align: center;
     transition: 0.3s;
+    background-color: #5c6bc0;
   }
 
   .navbar-section.active{
