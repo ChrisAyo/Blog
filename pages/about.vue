@@ -1,18 +1,27 @@
 <template>
   <div display="flex">
-    <h1>Hello</h1>
-    <p>
-      <b
-        >Welcome to my Blog, I am using this platform to showcase my projects,
-        interests share my hobbies and document my growth. At the core of it all
-        I want to have fun and learn, while simultaneously using this platform
-        to push myself outside of my comfort zone. I want to share my writings
-        and thoughts, Goals/Bucket list, Travel journeys experiences and tips.
-        And some outfits that I think are cool and fun. “A blog to express my
-        creativity, discover grow and play”.
-      </b>
-    </p>
-    <img class="aboutPic" src="~/static/Norfolk.jpeg" />
+    <div class="header">
+      <h1>Hello</h1>
+    </div>
+    <div class="landing">
+      <div class="mainPic">
+        <img class="aboutPic" src="~/static/Norfolk.jpeg" />
+      </div>
+      <div class="main-text flex-item">
+        <p>
+          <b
+            >Welcome to my Blog, I am using this platform to showcase my
+            projects, interests share my hobbies and document my growth. At the
+            core of it all I want to have fun and learn, while simultaneously
+            using this platform to push myself outside of my comfort zone. I
+            want to share my writings and thoughts, Goals/Bucket list, Travel
+            journeys experiences and tips. And some outfits that I think are
+            cool and fun. “A blog to express my creativity, discover grow and
+            play”.
+          </b>
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -33,7 +42,9 @@ export default {
 
 <style>
 .h1 {
-  /* font-size: 3em; */
+}
+.header {
+  padding: 20px;
 }
 .aboutPic {
   max-height: 400px;
@@ -45,5 +56,14 @@ export default {
 p {
   display: flex;
   justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+}
+
+.landing {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
 }
 </style>
