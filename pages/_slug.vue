@@ -51,7 +51,7 @@ export default {
 }
 
 .buttonSpace {
-  /* display: flex; */
+  display: flex;
   justify-content: space-around;
   text-decoration: none;
 }
