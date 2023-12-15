@@ -10,13 +10,13 @@
         <ul class="navbar-section" @click="closeNavMenu()">
           <!-- <v-app-bar-nav-icon @click.stop="drawer = !drawer" /> -->
           <NuxtLink to="/">
-            <v-toolbar-title class="red--text">Home</v-toolbar-title>
+            <v-toolbar-title class="white--text">Home</v-toolbar-title>
           </NuxtLink>
           <NuxtLink to="/about">
-            <v-toolbar-title class="red--text">About</v-toolbar-title>
+            <v-toolbar-title class="white--text">About</v-toolbar-title>
           </NuxtLink>
           <NuxtLink to="/my-first-blog-post">
-            <v-toolbar-title class="red--text">Explore</v-toolbar-title>
+            <v-toolbar-title class="white--text">Explore</v-toolbar-title>
           </NuxtLink>
         </ul>
         <div class="hamburger" @click="burgerOnClick()">
