@@ -51,7 +51,7 @@ export default {
 }
 
 .buttonSpace {
-  display: flex;
+  /* display: flex; */
   justify-content: space-around;
   text-decoration: none;
 }
@@ -78,14 +78,14 @@ export default {
   flex-direction: column;
   max-width: 800px;
 }
-article {
+/* article {
   display: flex;
   justify-content: center;
-}
+} */
 h1 {
   font-family: "Lato", sans-serif;
   font-size: 2em;
-  display: flex;
+  /* display: flex; */
 }
 .font-display {
   font-family: "Open Sans", sans-serif;
