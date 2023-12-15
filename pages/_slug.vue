@@ -77,8 +77,9 @@ export default {
   display: flex;
   flex-direction: column;
   max-width: 800px;
+  justify-content: center;
 }
-/* article {
+/* .center-article-text {
   display: flex;
   justify-content: center;
 } */
