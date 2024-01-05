@@ -49,10 +49,10 @@
         <div class="footer-links">
           <v-card-text class="white--text pt-0 space">
             <NuxtLink to="/about">
-              <v-toolbar-title>About</v-toolbar-title>
+              <v-toolbar-title class="white--text">About</v-toolbar-title>
             </NuxtLink>
             <NuxtLink to="/my-first-blog-post">
-              <v-toolbar-title>Explore</v-toolbar-title>
+              <v-toolbar-title class="white--text">Explore</v-toolbar-title>
             </NuxtLink>
           </v-card-text>
         </div>
