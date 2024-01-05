@@ -1,20 +1,22 @@
 <template>
-  <article>
-    <div class="myArticle">
-      <div class="nuxt-content">
-        <h1>{{ article.title }}</h1>
+  <v-row align-items="center" justify="center" padding="20px">
+    <article>
+      <div class="myArticle">
+        <div class="nuxt-content">
+          <h1>{{ article.title }}</h1>
+        </div>
+        <p>{{ article.dog }}</p>
+
+        <img class="blogPics" :src="article.img" :alt="article.alt" />
+
+        <nuxt-content class="nuxt-content" :document="article" />
+
+        <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
+        <!-- <p>{{ article.description }}</p> -->
+        <prev-next class="buttonSpace" :prev="prev" :next="next" />
       </div>
-      <p>{{ article.dog }}</p>
-
-      <img class="blogPics" :src="article.img" :alt="article.alt" />
-
-      <nuxt-content class="nuxt-content" :document="article" />
-
-      <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
-      <!-- <p>{{ article.description }}</p> -->
-      <prev-next class="buttonSpace" :prev="prev" :next="next" />
-    </div>
-  </article>
+    </article>
+  </v-row>
 </template>
 
 <script>
@@ -70,7 +72,8 @@ export default {
   text-decoration: none;
 }
 .blogPics {
-  max-width: 100px;
+  max-width: 100%;
+  max-height: 650px;
   padding-bottom: 25px;
 }
 .myArticle {
@@ -78,6 +81,7 @@ export default {
   flex-direction: column;
   max-width: 800px;
   justify-content: center;
+  padding: 20px;
 }
 /* .center-article-text {
   display: flex;

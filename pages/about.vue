@@ -53,14 +53,6 @@ export default {
   min-height: 100px;
 }
 
-p {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  padding: 30px;
-}
-
 .landing {
   display: flex;
   flex-direction: row;
