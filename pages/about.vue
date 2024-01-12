@@ -41,8 +41,18 @@ export default {
 </script>
 
 <style>
-.h1 {
+.landing {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
 }
+@media (max-width: 700px) {
+  .landing {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .header {
   padding: 20px;
 }
@@ -51,11 +61,5 @@ export default {
   max-width: 400px;
   min-width: 100px;
   min-height: 100px;
-}
-
-.landing {
-  display: flex;
-  flex-direction: row;
-  padding: 5px;
 }
 </style>

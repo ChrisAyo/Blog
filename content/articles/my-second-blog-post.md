@@ -1,7 +1,7 @@
 ---
 title: How to set a schedule and how to stick to it?
 description: I am a person who likes to do things spontaneously and say yes to things last minute. The problem with this is that my other objectives and Goals will suffer as I leave them to motivation, when I feel like it and when I have time.
-img: favicon.ico
+img: hike1.jpeg
 alt: my second blog post
 date: 21st Jan 2021
 ---

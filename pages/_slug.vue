@@ -52,17 +52,45 @@ export default {
   width: 100%;
 }
 
+/* @media(min-width:440px){
+  .buttonSpace {
+    display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+    width: 100%;
+  }
+} */
+
 .buttonSpace {
   display: flex;
   justify-content: space-around;
   text-decoration: none;
 }
+
+/* @media (min-width: 650px) {
+  .buttonSpace {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 25px;
+  }
+} */
+
+/* @media (min-width: 550px) {
+  .buttonSpace {
+    display: block;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 25px;
+  }
+} */
+
 .buttonSpace a {
   border-radius: 25px;
   text-decoration: none;
   background-color: #06b6d9;
   color: white;
-  padding: 15px 25px;
+  padding: 25px 20px;
 }
 .buttonSpace a:hover {
   background-color: #77787d;
@@ -97,7 +125,6 @@ h1 {
   font-size: 1.5em;
 }
 .nuxt-content h1 {
-  font-weight: 500em;
   font-size: 3em;
   font-family: "Open Sans", sans-serif;
 }
@@ -111,7 +138,11 @@ h1 {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
 }
-
+@media (max-width: 600px) {
+  .nuxt-content h1 {
+    font-size: 1.4em;
+  }
+}
 /* img {
     
   } */

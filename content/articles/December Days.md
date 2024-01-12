@@ -11,7 +11,7 @@ Leeds castle walk Kent
 Leisure walk not that demanding quite easy only took a while because we were following a guided route which wasn’t always clear.
 Managed to reset the form after working at it for a day, found a video clip that explained it and I’m glad it worked. I went for a gentle jog and did a few exercises when I got back. Met up with Precious and the twins after Habiba dropped me of at Pizza hut. Came home
 
-<img class="articleImage" src="heat.jpg">
+<img class="articleImage" src="heat.JPG">
 
 7/12/20
 Woke up pre 6, and didn’t check my phone until I was heading out. Read quite a bit of my growth mindset book and also completed the New earth Book the night before. I will need to read it again at some point really good. I logged on to work to catch up on last week as I was behind. Went to site and spent most of the day on the network came back and looked at my code for nearly an hour there was an inner joy in me when I realised that Joy comes from within and so does happiness. This week I really want to be productive and for me that looks as follows:
